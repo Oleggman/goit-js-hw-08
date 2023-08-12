@@ -1,11 +1,12 @@
 import common from './common.json';
+import throttle from 'lodash.throttle';
 
 const formObj = localStorage.getItem(common.LS_FEEDBACK_FORM) ?? "{}";
 const parsedFormObj = JSON.parse(formObj);
 
 const form = document.querySelector('.feedback-form');
 loadFormContent();
-form.addEventListener('input', onInputForm);
+form.addEventListener('input', throttle(onInputForm, 500));
 form.addEventListener('submit', onSubmitForm);
 
 function onInputForm(evt) {
