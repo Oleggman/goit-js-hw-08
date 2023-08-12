@@ -65,3 +65,14 @@ img {
   border: #3c0e0b solid;
   border-radius: 4px;
 }
+
+/**
+  |============================
+  | Task 2 Video Player
+  |============================
+*/
+
+#vimeo-player {
+  margin-left: calc(100vw / 2);
+  transform: translateX(-50%);
+}
