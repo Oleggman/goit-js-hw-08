@@ -1,3 +1,4 @@
 {
-  "LS_CURRENTTIME": "videoplayer-current-time"
+  "LS_CURRENTTIME": "videoplayer-current-time",
+  "LS_FEEDBACK_FORM": "feedback-form-state"
 }
